@@ -25,15 +25,15 @@ let a, b;
 for (let i = 0; i < 2; i++) {
     a = prompt('Один из последних просмотренных фильмов?', '');
     b = prompt('На сколько оцените его?', '');
-    console.log('start ' + i);
     
     if (a == null || b == null  || a.length > 50 || a == '' || b == '') {
             alert('Произошла ошибка! Вы либо ничего не ответили, либо указали фильм с названием более 50 символов');
             i--;
+            console.log('error');
             continue;
     } else {
         personalMovieDB.movies[a] = b;
-        console.log('end ' + i);
+        console.log('done');
     }
 }
 console.log(personalMovieDB);
