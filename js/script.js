@@ -27,7 +27,7 @@ for (let i = 0; i < 2; i++) {
     b = prompt('На сколько оцените его?', '');
     console.log('start ' + i);
     
-    if (a == undefined || b == undefined  || a.length > 50 || a == '' || b == '') {
+    if (a == null || b == null  || a.length > 50 || a == '' || b == '') {
             alert('Произошла ошибка! Вы либо ничего не ответили, либо указали фильм с названием более 50 символов');
             i--;
             continue;
