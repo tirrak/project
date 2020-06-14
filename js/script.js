@@ -1,16 +1,16 @@
 "use strict";
 
 let personalMovieDB = {
-    numberOfFilms: 0,
+    count: 0,
     movies: {},
     actors: {},
     genres: [],
     privat: false,
     start: function() {
-        personalMovieDB.numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+        personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
     
-        while (personalMovieDB.numberOfFilms == '' || personalMovieDB.numberOfFilms == null || isNaN(personalMovieDB.numberOfFilms)) {
-            personalMovieDB.numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+        while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
+            personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
         }
     },
 
