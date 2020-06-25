@@ -80,4 +80,4 @@ let personalMovieDB = {
 // personalMovieDB.rememberMyFilm();
 // personalMovieDB.writeYourGenres();
 // personalMovieDB.toggleVisibleMyDB();
-personalMovieDB.showMyDB(personalMovieDB.privat);
+// personalMovieDB.showMyDB(personalMovieDB.privat);
