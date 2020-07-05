@@ -28,12 +28,14 @@ let personalMovieDB = {
     },
 
     writeYourGenres: function() {
-        for(let i = 0; i < 3; i++) {
-            let a = prompt(`Ваш любимый жанр под номером ${i + 1}`);
+        for(let i = 0; i < 1; i++) {
+            let a = prompt(`Введите Ваши любимые жанры через запятую`).toLowerCase();
             if (a == null || a == '') {
+                console.log('Вы ввели некорректные данные, либо не ввели ничего вовсе');
                 i--;
             } else {
-                personalMovieDB.genres[i] = a;
+                personalMovieDB.genres = a.split(', ');
+                personalMovieDB.genres.sort();
             }
         }
         personalMovieDB.genres.forEach((item, index) => {
